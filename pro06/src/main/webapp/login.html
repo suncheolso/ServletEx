@@ -11,12 +11,14 @@ post : form에서 post접속
 
 <!DOCTYPE html>
 <html>
-<head>
+<head><!-- 문자셋, CSS, Javascript, Ajak -->
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body><!-- 본문내용 -->
+<!-- HTML은 서버를 1번만 실행하고 수정후에는 F5를 갱신으로 확인가능 -->
 <!-- 서버에 변수와 값을 전달하는 폼 -->
+<!-- method get->doGet, post->doPost, action=@WebServlet 연결(맵핑) -->
 <!-- 
 name에 웹페이지에서 위치를 찾기위한 Form의 이름(CSS, Script)
 action 자바단에서 사용할 @Webservlet("") 접속명
@@ -28,11 +30,12 @@ input type : 입력종류(text,password,email,phone....)
 	  value : 값(초기값, 전달받은 결과값)
 	  type중에서 특별한 기능 submit(폼내용을 서버	전달), reset(폼 초기화) 
  -->
-<form name="frmlogin" method="get" action="login"
-enctype="UTR-8">
-아이디 : <input type="text" name="user_id"><br>
-비밀번호 : <input type="password" name="user_pw"><br>
-<input type="submit" value="로그인">
+<form name="formlogin" method="post" action="login"
+enctype="UTR-8"><!-- scanner 입력창, JLabel, JTextfield(문자열입력창), JButton -->
+아이디 : <input type="text" name="user_id"><br> <!-- name=변수명 -->
+비밀번호 : <input type="password" name="user_pw"><br><!-- br은 엔터키 -->
+<input type="submit" value="로그인"> <!-- form에 지정된 곳으로 서버에 전달 -->
+<!-- ?user_id=asdka&user_pw=sadklsd -->
 <input type="reset" value="새로입력">
 </form>
 <!--
