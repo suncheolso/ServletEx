@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    getbootstrap.com
+    부트스트랩 - 웹 표준 - 구글
+    CSS, jQuery => 양식폼
+    부트스트랩 3,	4,	5 
     
 <%
 	request.setCharacterEncoding("UTF-8"); //JSP로 사용
